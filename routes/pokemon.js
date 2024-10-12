@@ -1,6 +1,6 @@
 const express = require('express');
 const pokemon = express.Router();
-const db = require('../config/database')
+const db = require('../config/database');
 
 pokemon.post("/", async (req, res, next) => {
     const { pok_name, pok_height, pok_weight, pok_base_experience } = req.body;
